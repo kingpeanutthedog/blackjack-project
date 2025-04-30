@@ -1,0 +1,83 @@
+#dealercards {
+  border: 8.1px solid rgb(0, 60, 0);
+  height: 216px;
+  width: 540px;
+  margin: auto;
+  background: darkgreen;
+}
+#mycards {
+  border: 8.1px solid rgb(0, 60, 0);
+  height: 216px;
+  width: 540px;
+  margin: auto;
+  background: darkgreen;
+}
+#mycards > img {
+  height: 98.01px;
+  width: 67.5px;
+}
+#dealercards > img {
+  height: 98.01px;
+  width: 67.5px;
+}
+#deck {
+  border: 8.1px solid rgb(71, 0, 0);
+  height: 216px;
+  width: 675px;
+  margin: auto;  
+  background: maroon;
+}
+
+#dtotal {
+  height: 13.5px;
+  width: 135px;
+  border: 2.7px solid black;
+  margin: auto;
+  font-size: x-small; 
+  text-align: center;
+}
+
+#mtotal {
+  height: 13.5px;
+  width: 135px;
+  border: 2.7px solid black;
+  margin: auto;
+  font-size: x-small; 
+  text-align: center;
+}
+#dashcontainer {
+  margin: auto;
+  display: grid;
+  width: 540px;
+  height: 20px;
+  grid-template-columns: 180px 180px 180px;
+  grid-template-rows: auto auto;
+}
+
+#money {
+  display: grid;
+  grid-row: 1 / 3;
+  border: 1px solid black;
+  place-content: center;
+}
+
+#buttons {
+  display: grid;
+  grid-row: 1 / 3;
+  border: 1px solid black;
+  place-content: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+#bfieldcontainer {
+  display: grid;
+  border: 1px solid black;
+  place-content: center;
+}
+
+#bbuttoncontainer {
+  display: grid;
+  border: 1px solid black;
+  place-content: center;
+}

@@ -28,6 +28,8 @@
   width: 675px;
   margin: auto;  
   background: maroon;
+  font:bold small-caps 30px verdana;
+  color: rgb(71, 0, 0);
 }
 
 #dtotal {

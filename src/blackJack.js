@@ -93,9 +93,9 @@ function newDCard() {
     if (dealersNewCard.cardVal === "A") {
         if (dealerTotal <= 10){ 
         dealerTotal = dealerTotal + 11
+        dSoftAce = dSoftAce + 1
         }
          else {dealerTotal = dealerTotal + 1}
-        dSoftAce = dSoftAce + 1
     } else {
             dealerTotal = dealerTotal + dealersNewCard.cardVal
         }
@@ -112,9 +112,10 @@ myHand.appendChild(newImage)
 if (myNewCard.cardVal === "A") {
     if (myTotal <=10) {
         myTotal = myTotal +11
+        mSoftAce = mSoftAce + 1
     }
     else {myTotal = myTotal + 1}
-    mSoftAce = mSoftAce + 1}
+    }
     else 
     {myTotal = myTotal + myNewCard.cardVal}
     mSoftAceCheck()

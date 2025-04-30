@@ -178,12 +178,12 @@ function standMe(){
 //function that checks if your bet is good or not
 function getBet() {
     let proposedBet = document.getElementById("betfield").value
-    if (isNaN(proposedBet) === true) {document.getElementById("betbutton").innerHTML = "you can't bet letters";
+    if (isNaN(proposedBet) === true) {document.getElementById("betbutton").innerHTML = "error";
         return "bad bet"}
     else {
-        if (Number(proposedBet) > myMoney) {document.getElementById("betbutton").innerHTML = "not enough money";
+        if (Number(proposedBet) > myMoney) {document.getElementById("betbutton").innerHTML = "error";
             return "bad bet"}
-        if (Number(proposedBet) <= 0) {document.getElementById("betbutton").innerHTML = "you can't bet negatives";
+        if (Number(proposedBet) <= 0) {document.getElementById("betbutton").innerHTML = "error";
             return "bad bet"
         }
         else {return Number(proposedBet)}

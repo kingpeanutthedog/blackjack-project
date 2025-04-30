@@ -53,22 +53,22 @@
   margin: auto;
   display: grid;
   width: 540px;
-  height: 20px;
+  height: 50px;
   grid-template-columns: 180px 180px 180px;
-  grid-template-rows: auto auto;
+  grid-template-rows: 25px 25px;
+  background: darkgreen;
+  border: 2.7px solid rgb(0, 60, 0);
 }
 
 #money {
   display: grid;
   grid-row: 1 / 3;
-  border: 1px solid black;
   place-content: center;
 }
 
 #buttons {
   display: grid;
   grid-row: 1 / 3;
-  border: 1px solid black;
   place-content: center;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
@@ -76,13 +76,17 @@
 
 #bfieldcontainer {
   display: grid;
-  border: 1px solid black;
   place-content: center;
+}
+
+#betfield {
+  border-radius: 0;
+  border: 2px solid rgb(0, 60, 0);
+  background: lightgreen;
 }
 
 #bbuttoncontainer {
   display: grid;
-  border: 1px solid black;
   place-content: center;
 }
 #hit {

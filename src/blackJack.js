@@ -231,7 +231,7 @@ function winCheck() {
         if (myTotal > dealerTotal) {return "you win"}
         if (myTotal === dealerTotal) {return "tie"}
     }
-    if (mBust == true && dBust === false) {return "dealer blew your head smoove off"}
+    if (mBust == true && dBust === false) {return "dealer wins"}
     if (mBust === false && dBust === true) {return "you win"}
     if (mBust === true && dBust === true) {return "tie"}
     }

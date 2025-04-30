@@ -21,6 +21,8 @@
   width: 67.5px;
 }
 #deck {
+  display: grid;
+  place-content: center;
   border: 8.1px solid rgb(71, 0, 0);
   height: 216px;
   width: 675px;

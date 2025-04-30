@@ -43,6 +43,7 @@ document.getElementById("betfield").value = ""
 document.getElementById("betbutton").innerHTML = "bet"
 document.getElementById("mtotal").innerHTML= ""
 document.getElementById("dtotal").innerHTML= ""
+document.getElementById("deck").innerHTML= "BlackJack"
 moneyDisplay()
 turnCheck()
 }
@@ -61,6 +62,7 @@ function gameEnd() {
     moneyDisplay()
 
     document.getElementById("newgame").hidden = false
+    document.getElementById("deck").innerHTML = winCheck()
 
 }
 

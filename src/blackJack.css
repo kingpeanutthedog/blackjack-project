@@ -131,7 +131,15 @@
   color: rgb(71, 0, 0);
   font: small-caps 15px verdana;
 }
-
+#newgame:hover{
+  display: grid;
+  place-content: center;
+  border-radius: 0;
+  border: 2px solid rgb(71, 0, 0);
+  background: rgb(71, 0, 0);
+  color: black;
+  font: small-caps 15px verdana;
+}
 
 #betbutton {
   display: grid;

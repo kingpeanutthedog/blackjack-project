@@ -191,7 +191,7 @@ function getBet() {
 }
 
 //function that runs when you hit bet button
-function pressbet() {
+function pressBet() {
     let bet = getBet()
     if (isNaN(bet) === false) {
         myBet = bet
@@ -241,7 +241,14 @@ function setUp() {
 document.getElementById("hit").onclick = hitMe;
 document.getElementById("stand").onclick = standMe;
 document.getElementById("newgame").onclick = newGame;
-document.getElementById("betbutton").onclick = pressbet;
+document.getElementById("betbutton").onclick = pressBet;
+document.getElementById("betfield").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault()
+        document.getElementById("betbutton").click()
+    }
+    })
+
 newGame();
 
 }
